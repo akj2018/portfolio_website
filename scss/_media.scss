@@ -1,0 +1,259 @@
+// Tablet and Smaller
+
+@media (max-width: 1280px) {
+  //   Header
+  #header-home {
+    background: $bg-image no-repeat center center/cover;
+    .header-content {
+      margin-top: 8rem;
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  #home-b {
+    .stats {
+      .stats-title {
+        margin-top: 1rem;
+        line-height: 2.25rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) and (min-width: 600px) {
+  #home-a {
+    .specials {
+      grid-template-columns: 1fr;
+    }
+
+    .specials > div {
+      display: flex;
+      align-items: center;
+    }
+
+    .specials > div > div {
+      text-align: left;
+      padding-left: 2rem;
+    }
+
+    .specials > div > div p {
+      padding-left: 0;
+    }
+
+    .specials > div:first-child {
+      .fas {
+        padding-right: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .lead {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  // Header
+  #header-home {
+    height: 70vh;
+    .header-content {
+      margin-top: 1.25rem;
+      h1 {
+        font-size: 3.15rem;
+      }
+      a {
+        padding: 0.45rem 1.5rem;
+      }
+    }
+  }
+}
+
+// Smartphones
+@media (max-width: 600px) {
+  .bottom-line {
+    width: 20%;
+  }
+
+  .section-title {
+    padding-bottom: 0;
+  }
+
+  // Navbar
+
+  // Header
+  #header {
+    &-home {
+      height: 85vh;
+      .header-content {
+        margin-top: 2.5rem;
+      }
+    }
+
+    &-inner {
+      height: 11rem;
+    }
+  }
+
+  //Home Section A
+  #home {
+    &-a {
+      .specials {
+        > div {
+          margin-top: 0.5rem;
+          border-bottom: 1px $light-color solid;
+          padding-bottom: 1.25rem;
+        }
+
+        > div:last-child {
+          border-bottom: none;
+        }
+        .fas {
+          padding-bottom: 0rem;
+        }
+      }
+    }
+
+    &-b {
+      .stats {
+        > div {
+          padding: 1.5rem 0;
+          .stats-number {
+            line-height: 1.85rem;
+            font-size: 1.5rem;
+          }
+          .stats-title {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+
+  //   Stack Grid Column
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  .items,
+  #contact-b .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  //About
+  #about {
+    // Section A: Info
+    &-a {
+      .about-info {
+        grid-template-areas:
+          "bio-image"
+          "bio-content"
+          "award-1"
+          "award-2"
+          "award-3";
+      }
+    }
+
+    &-b {
+      .progress-bar {
+        height: 8px;
+        .progress {
+          height: 8px;
+        }
+      }
+    }
+    &-c {
+      .logos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+        img {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  //Contacts
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "email"
+          "subject"
+          "number"
+          "message";
+      }
+    }
+    &-b {
+      padding: 1.25rem;
+      .contact-info {
+        > div {
+          padding-bottom: 1.25rem;
+          border-bottom: 1px #555 solid;
+        }
+        > div:last-child {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+      }
+    }
+    &-c {
+      padding: 1.75rem;
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  //Footer
+  #main-footer {
+    height: 7rem;
+    .footer-content {
+      height: 6.5rem;
+      padding: 0.5rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-height: 580px) {
+  #header-home {
+    height: 90vh;
+    .header-content {
+      margin-top: 0.5rem;
+      padding-top: 4%;
+      h1 {
+        font-size: 2.85rem;
+      }
+      .lead {
+        margin-bottom: 1rem;
+        margin-top: 0.85rem;
+        font-size: 1.1rem;
+      }
+      .btn-light {
+        font-size: 1.1rem;
+        padding: 0.35rem 1.35rem;
+        margin: 0rem;
+      }
+    }
+  }
+}
+
+// iPhone 5s
+@media (max-width: 320px) {
+  html,
+  body {
+    font-size: 0.8rem;
+  }
+}
